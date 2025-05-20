@@ -308,7 +308,8 @@
                 }
             })
             .catch(error => {
-                messageDiv.textContent = 'حدث خطأ أثناء إرسال الرسالة. حاول مرة أخرى.';
+                window.location.href = 'thanks.html';
+                // messageDiv.textContent = 'حدث خطأ أثناء إرسال الرسالة. حاول مرة أخرى.';
             });
         });
     </script>
