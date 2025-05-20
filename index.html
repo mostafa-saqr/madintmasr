@@ -301,9 +301,10 @@
             })
             .then(response => response.json())
             .then(data => {
-                messageDiv.textContent = data.message;
                 if (data.status === 'success') {
-                    form.reset();
+                    window.location.href = 'thanks.html';
+                } else {
+                    messageDiv.textContent = data.message;
                 }
             })
             .catch(error => {
